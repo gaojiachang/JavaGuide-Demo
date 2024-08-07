@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 
 public class uniqueInstanceDemo {
     public static void myRun() {
@@ -7,17 +7,19 @@ public class uniqueInstanceDemo {
     }
 }
 
+// 双重校验锁实现单例模式
 class Singleton {
-    private static Singleton uniqueInstance;
+    private static volatile Singleton uniqueInstance;
     
     private Singleton() {}
 
     public static Singleton getUniqueInstance(){
         if (uniqueInstance == null) { //第一次检验，保证类被实例化后不会再次实例化。
-            //第二次检验，保证不会多个线程同时进入实例化代码块（因为有可能多个线程在检验uniqueInstance时都为空），依次防止每个线程实例化一个对象。
+            // 给类对象加锁，防止多个进程通过第一次检查时，都执行实例化代码。
             synchronized(Singleton.class){
+                // 第二次检验，防止每一线程拿到锁后，都会实例化一个对象。
                 if (uniqueInstance == null) { 
-                    uniqueInstance = new Singleton();
+                    uniqueInstance = new Singleton(); //代码分三步执行：1.分配内存 2.初始化对象 3.将对象指向分配的内存
                 }
             }
         }

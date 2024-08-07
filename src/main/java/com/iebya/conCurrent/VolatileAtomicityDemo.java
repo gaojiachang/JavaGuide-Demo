@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,7 +9,7 @@ public class VolatileAtomicityDemo {
         ExecutorService threadPool = Executors.newFixedThreadPool(5);
         for(int i = 0; i < 5; i++){
             threadPool.execute(() -> {
-                for (int j = 0; j < 1000; j++) {
+                for (int j = 0; j < 10000; j++) {
                     volatileAtomicity.increase();
                 }
             });

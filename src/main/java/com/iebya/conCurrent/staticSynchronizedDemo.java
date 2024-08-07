@@ -1,5 +1,7 @@
-package com.iebya.conCurrent;
-
+package com.iebya.concurrent;
+/*
+ * 通过此程序，利用synchronized关键字，尝试多进程调试独占式锁
+ */
 public class staticSynchronizedDemo {
     public static void myRun(){
         Thread t1 = new Thread(new Runnable(){

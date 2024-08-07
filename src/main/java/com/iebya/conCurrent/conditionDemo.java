@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;
@@ -19,7 +19,7 @@ public class conditionDemo {
             lock.lock();
             try {
                 while (queue.size() == CAPACITY) {
-                    bufferNotFull.await();
+                    bufferNotFull.await(); // 释放锁并阻塞当前线程；直到①被唤醒②重新获取锁，才能继续执行
                 }
                 queue.add(value);
                 System.out.println("Producer produced: " + value);

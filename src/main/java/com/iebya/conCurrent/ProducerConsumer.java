@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 import lombok.AllArgsConstructor;
 
 public class ProducerConsumer {

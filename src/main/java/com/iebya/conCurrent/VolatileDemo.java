@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 
 public class VolatileDemo {
     private static volatile boolean running = true; // volatile修饰符，保证了可见性，如果不加volatile，子线程终止较晚甚至永远不会终止

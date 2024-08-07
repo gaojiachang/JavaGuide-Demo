@@ -1,4 +1,4 @@
-package com.iebya.conCurrent;
+package com.iebya.concurrent;
 
 import java.util.concurrent.locks.StampedLock;
 
