@@ -1,4 +1,4 @@
-package com.iebya.base;
+package com.iebya.javabase;
 
 import java.lang.annotation.*;
 import java.lang.reflect.Method;

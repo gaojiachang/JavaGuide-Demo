@@ -1,4 +1,4 @@
-package com.iebya.base.method;
+package com.iebya.javabase.method;
 
 /**
  * OverrideDemo

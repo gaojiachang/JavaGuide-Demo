@@ -1,4 +1,4 @@
-package com.iebya.base.oop;
+package com.iebya.javabase.oop;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

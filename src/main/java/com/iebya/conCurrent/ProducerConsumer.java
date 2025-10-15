@@ -42,7 +42,6 @@ class Producer implements Runnable{
                 throw new RuntimeException(e);
             }
         }
-
     }
 }
 @AllArgsConstructor

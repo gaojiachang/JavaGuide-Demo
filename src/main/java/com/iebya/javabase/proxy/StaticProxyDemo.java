@@ -1,4 +1,4 @@
-package com.iebya.base.proxy;
+package com.iebya.javabase.proxy;
 
 public class StaticProxyDemo {
     public static void main(String[] args) {

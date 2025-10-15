@@ -1,4 +1,4 @@
-package com.iebya.base.oop;
+package com.iebya.javabase.oop;
 
 public class AbstractClassAndInterfaceDemo {
     public static void main(String[] args) {

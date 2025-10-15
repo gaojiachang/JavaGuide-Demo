@@ -1,4 +1,4 @@
-package com.iebya.base.io;
+package com.iebya.javabase.io;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

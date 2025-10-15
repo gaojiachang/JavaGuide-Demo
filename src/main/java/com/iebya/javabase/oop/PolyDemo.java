@@ -1,4 +1,4 @@
-package com.iebya.base.oop;
+package com.iebya.javabase.oop;
 
 public class PolyDemo {
     public static void main(String[] args) {

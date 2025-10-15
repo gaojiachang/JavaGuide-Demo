@@ -1,4 +1,4 @@
-package com.iebya.base.method;
+package com.iebya.javabase.method;
 
 public class VarargsDemo {
     public static void printVariable(String... args) {

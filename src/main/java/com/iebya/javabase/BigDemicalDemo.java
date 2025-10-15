@@ -1,4 +1,4 @@
-package com.iebya.base;
+package com.iebya.javabase;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

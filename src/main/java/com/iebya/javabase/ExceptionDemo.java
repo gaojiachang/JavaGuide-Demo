@@ -1,4 +1,4 @@
-package com.iebya.base;
+package com.iebya.javabase;
 
 public class ExceptionDemo {
     public static void main(String[] args) {
